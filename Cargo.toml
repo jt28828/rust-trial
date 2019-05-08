@@ -1,0 +1,15 @@
+[package]
+name = "screeps-wasm"
+version = "0.1.0"
+authors = ["James Turner <jt28828@gmail.com>"]
+edition = "2018"
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+serde = "^1.0.59"
+serde_derive = "^1.0.59"
+[dependencies.wasm-bindgen]
+version = "^0.2"
+features = ["serde-serialize"]
